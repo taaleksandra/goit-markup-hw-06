@@ -739,7 +739,6 @@ modal styles
   color: var(--descriptions-color);
   padding: 0;
 }
-/* .modal-form-checkbox span:hover .modal-form-checkbox span::before{ */
 .form-checkbox-box:hover .modal-form-checkbox span::before {
   border-color: var(--accent-color);
 }
