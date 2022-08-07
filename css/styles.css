@@ -655,9 +655,19 @@ modal styles
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding: 12px 42px;
+  outline: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form label {
   position: relative;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-form label:focus-within {
+  fill: var(--accent-color);
+}
+.modal-form-input:focus-within {
+  border-color: var(--accent-color);
 }
 .modal-form-icon {
   position: absolute;
@@ -676,6 +686,8 @@ modal styles
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
+  outline: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-text-input::placeholder {
   font-size: 12px;
@@ -683,11 +695,16 @@ modal styles
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
+.modal-form-text-input:focus-within {
+  border-color: var(--accent-color);
+}
 .modal-form-checkbox {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
+  cursor: pointer;
+  position: relative;
 }
 .modal-form-checkbox span {
   font-size: 14px;
@@ -697,14 +714,7 @@ modal styles
   padding-left: 7px;
   margin: 0;
 }
-/* .modal-form-checkbox-checked {
-  width: 16px;
-  height: 15px;
-  border: ;
-} */
-/* .modal-form-checkbox-checked {
- visibility: hidden;
-} */
+
 .modal-form button {
   display: block;
   margin-left: auto;
