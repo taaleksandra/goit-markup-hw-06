@@ -721,6 +721,7 @@ modal styles
   border-radius: 2px;
   margin-right: 8px;
   margin-left: 41px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-checkbox-box input {
   appearance: none;
@@ -737,6 +738,10 @@ modal styles
   letter-spacing: 0.03em;
   color: var(--descriptions-color);
   padding: 0;
+}
+/* .modal-form-checkbox span:hover .modal-form-checkbox span::before{ */
+.form-checkbox-box:hover .modal-form-checkbox span::before {
+  border-color: var(--accent-color);
 }
 .modal-form-links {
   color: var(--accent-color);
