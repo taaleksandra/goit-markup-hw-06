@@ -369,24 +369,53 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>x</button>
-        <form class="modal-form">
-          <h3>Zostaw swoje dane w formularzu poniżej</h3>
+        <h3>Zostaw swoje dane w formularzu poniżej</h3>
+        <form class="modal-form" name="contact-form" autocomplete="on">
           <label>
-            <p>Imie</p>
-            <input />
+            <span>Imię</span>
+            <input
+              class="modal-form-input"
+              type="text"
+              name="client_name"
+              required
+            />
           </label>
           <label>
-            <p>Telefon</p>
-            <input />
+            <span>Telefon</span>
+            <input
+              class="modal-form-input"
+              type="tel"
+              name="client_phone_number"
+            />
           </label>
           <label>
-            <p>Email</p>
-            <input />
+            <span>Email</span>
+            <input
+              class="modal-form-input"
+              type="email"
+              name="client_email"
+              required
+            />
           </label>
           <label>
-            <p>Komentarz</p>
-            <input />
+            <span>Komentarz</span>
+            <textarea
+              class="modal-form-text-input"
+              name="client_comment"
+              placeholder="Wprowadź komentarz"
+            ></textarea>
           </label>
+          <label class="modal-form-checkbox">
+            <input type="checkbox" name="statute_acceptation" required />
+            <span
+              >Oświadczam iż akceptuję
+              <a href="" class="modal-form-links">Regulamin</a> i
+              <a href="" class="modal-form-links"
+                >Politykę Prywatności.</a
+              ></span
+            >
+          </label>
+          <button type="submit">Wyślij</button>
         </form>
       </div>
     </div>
@@ -434,7 +463,7 @@
         <div class="footer-form">
           <form>
             <label>
-              <h4>ZAPISZ SIĘ DO NEWSLETTERA</h4>
+              <span class="footer-form-title">ZAPISZ SIĘ DO NEWSLETTERA</span>
               <input
                 type="email"
                 name="email-newsletter"
