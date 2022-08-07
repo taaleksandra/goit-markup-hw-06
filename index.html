@@ -371,6 +371,9 @@
         <button type="button" class="close-btn" data-modal-close>x</button>
         <h3>Zostaw swoje dane w formularzu poniżej</h3>
         <form class="modal-form" name="contact-form" autocomplete="on">
+          <svg width="12" height="12">
+            <use href="images/sprite-min.svg#icon-person-black"></use>
+          </svg>
           <label>
             <span>Imię</span>
             <input
@@ -407,12 +410,9 @@
           </label>
           <label class="modal-form-checkbox">
             <input type="checkbox" name="statute_acceptation" required />
-            <svg width="16" height="15">
-              <use
-                href="images/sprite-min.svg#icon-icon-check"
-                width="16"
-                height="15"
-              ></use>
+            <div class="modal-form-checkbox-unchecked"></div>
+            <svg width="16" height="15" class="modal-form-checkbox-checked">
+              <use href="images/sprite-min.svg#icon-icon-check"></use>
             </svg>
             <span
               >Oświadczam iż akceptuję

@@ -689,6 +689,14 @@ modal styles
   padding-left: 7px;
   margin: 0;
 }
+/* .modal-form-checkbox-checked {
+  width: 16px;
+  height: 15px;
+  border: ;
+} */
+/* .modal-form-checkbox-checked {
+ visibility: hidden;
+} */
 .modal-form button {
   display: block;
   margin-left: auto;
