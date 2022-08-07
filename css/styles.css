@@ -262,6 +262,9 @@ footer styles
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
+.footer-form button:active {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3) inset;
+}
 .footer-form svg {
   margin-left: 24px;
   fill: var(--white-color);
@@ -311,6 +314,9 @@ main-page main styles
   margin-right: auto;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.container-main-first-button:active {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3) inset;
 }
 .container-main-second-list {
   list-style: none;
@@ -714,7 +720,9 @@ modal styles
   padding-left: 7px;
   margin: 0;
 }
-
+.modal-form-links {
+  color: var(--accent-color);
+}
 .modal-form button {
   display: block;
   margin-left: auto;
@@ -723,15 +731,18 @@ modal styles
   padding: 10px 76px;
   border-radius: 4px;
   background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--white-color);
-  cursor: pointer;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-form-links {
-  color: var(--accent-color);
+.modal-form button:hover {
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.modal-form button:active {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3) inset;
 }
