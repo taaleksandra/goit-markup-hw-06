@@ -768,4 +768,8 @@ modal styles
 .checkbox-div svg {
   position: absolute;
   visibility: hidden;
+  z-index: 15;
+}
+.checkbox-div input:checked + .checkbox-div svg {
+  visibility: visible;
 }
