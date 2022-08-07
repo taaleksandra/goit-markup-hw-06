@@ -415,19 +415,28 @@
               placeholder="Wprowadź komentarz"
             ></textarea>
           </label>
-          <label class="modal-form-checkbox">
-            <input type="checkbox" name="statute_acceptation" required />
-            <svg width="24" height="24" class="modal-form-checkbox-checked">
-              <use href="images/sprite-min.svg#icon-icon-check"></use>
-            </svg>
-            <span
-              >Oświadczam iż akceptuję
-              <a href="" class="modal-form-links">Regulamin</a> i
-              <a href="" class="modal-form-links"
-                >Politykę Prywatności.</a
-              ></span
-            >
-          </label>
+          <div class="checkbox-div">
+            <div>
+              <input
+                type="checkbox"
+                name="statute_acceptation"
+                id="statute_checkbox"
+                required
+              />
+              <svg width="24" height="24" class="modal-form-checkbox-checked">
+                <use href="images/sprite-min.svg#icon-icon-check"></use>
+              </svg>
+            </div>
+            <label class="modal-form-checkbox" for="statute_checkbox">
+              <span
+                >Oświadczam iż akceptuję
+                <a href="" class="modal-form-links">Regulamin</a> i
+                <a href="" class="modal-form-links"
+                  >Politykę Prywatności.</a
+                ></span
+              >
+            </label>
+          </div>
           <button type="submit">Wyślij</button>
         </form>
       </div>

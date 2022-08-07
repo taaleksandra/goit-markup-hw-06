@@ -691,7 +691,6 @@ modal styles
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
   outline: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -717,7 +716,8 @@ modal styles
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--descriptions-color);
-  padding-left: 7px;
+  padding-left: 65px;
+  padding-top: 1px;
   margin: 0;
 }
 .modal-form-links {
@@ -745,4 +745,27 @@ modal styles
 }
 .modal-form button:active {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3) inset;
+}
+.checkbox-div {
+  display: flex;
+  position: relative;
+  margin-top: 20px;
+}
+.checkbox-div div {
+  width: 16px;
+  height: 15px;
+  border: solid 2px hsla(0, 0%, 13%, 1);
+  border-radius: 2px;
+  position: absolute;
+  left: 49px;
+  top: 5px;
+  transform: translate(-50%, 0);
+}
+.checkbox-div input {
+  position: absolute;
+  appearance: none;
+}
+.checkbox-div svg {
+  position: absolute;
+  visibility: hidden;
 }
